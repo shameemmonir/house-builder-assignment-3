@@ -24,6 +24,10 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'book-primary': 'rgb(171, 239, 95)',
+                'book-primary-bg': 'rgba(171, 239, 95, 0.5)',
+                'letter-primary': 'rgb(233, 233, 233)',
+                'circle-primary': 'rgb(115, 115, 115)',
               }
             }
           }
@@ -31,8 +35,65 @@
       </script>
 </head>
 <body class="font-manrope">
-    <header>
+    <header class="container mx-auto">
+      <!-- navbar section start here  -->
+       <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <button class="bg-book-primary px-1 rounded-full text-white font-bold"><i class="fa-solid fa-arrow-right text-xl -rotate-45 text-black"></i></button>
+            <a class="btn btn-ghost text-3xl">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-5 hidden lg:flex">
+            <button class="bg-white px-2 py-1 rounded-full border border-circle-primary text-circle-primary font-bold"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="bg-white px-2 py-1 rounded-full border border-circle-primary text-circle-primary font-bold"><i class="fa-solid fa-cart-shopping"></i></button>
+            <a class="btn bg-book-primary font-bold text-xl">Book Consult <button class="bg-black px-1 rounded-full text-white font-bold"><i class="fa-solid fa-arrow-right text-xl -rotate-45 text-letter-primary"></i></button></a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-3xl ml-40">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+        </div>
+       </nav>
 
+       <!-- hero section start here  -->
+        <div>
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="">
+                <div class=" flex justify-center">
+                  <img class="w-1/2" src="./assets/banner.png" alt="">
+                </div>
+                <h1 class="mt-6 text-6xl font-extrabold w-full">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                
+            <a class="btn bg-book-primary-bg font-bold text-xl">View Details<button class="bg-book-primary px-1 rounded-full text-white font-bold"><i class="fa-solid fa-arrow-right text-xl -rotate-45 text-black"></i></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
     <main>
 
